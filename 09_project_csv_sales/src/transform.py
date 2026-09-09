@@ -1,13 +1,13 @@
 
 
 # ═══ TRANSFORM: limpiar y calcular ═════════════════════════════
-def transform_sales(raw_sales: list[dict]):
+def transformar_ventas(ventas_raw: list[dict]):
     """Limpia datos sucios y calcula totales. Devuelve (limpias, errores)."""
 
     limpias = []
     errores = []
 
-    for i, venta in enumerate(raw_sales):
+    for i, venta in enumerate(ventas_raw):
         try:
             # validar producto no vacío
             if not (venta.get("producto", "")).strip():

@@ -2,7 +2,7 @@
 import json
 
 
-def guardar_resultados(resumen, errores, ruta_salida, ruta_errores):
+def guardar_resultado(resumen, errores, ruta_salida, ruta_errores):
     """Escribe el resumen y los errores en archivos JSON"""
 
     with open(ruta_salida, "w", encoding="utf-8") as f:
