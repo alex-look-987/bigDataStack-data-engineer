@@ -1,6 +1,4 @@
-import csv, json
-from datetime import datetime
-from collections import defaultdict
+import csv
 
 # ═══ EXTRACT: leer datos ═══════════════════════════════════════
 def extract_sales(csv_route):
