@@ -20,7 +20,7 @@ ventas = [
     ["2024-03-15", "Sudadera Tech", "ropa", "2", "69.99", "Carlos Ruiz"],
 ]
 
-def generate_data(sales):
+def generar_ventas(ventas):
     with open("09_project_csv_sales/data/ventas_dia.csv", "w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["fecha", "producto", "categoria", "cantidad", "precio_unitario", "cliente"])
@@ -31,4 +31,4 @@ def generate_data(sales):
 if __name__ == "__main__":
     os.makedirs("09_project_csv_sales/data", exist_ok=True)
 
-    generate_data(ventas)
+    generar_ventas(ventas)
