@@ -27,8 +27,3 @@ def generar_ventas(ventas):
         writer.writerows(ventas)
 
     print(f"[OK] CSV generado: data/ventas_dia.csv ({len(ventas)} filas)")
-
-if __name__ == "__main__":
-    os.makedirs("09_project_csv_sales/data", exist_ok=True)
-
-    generar_ventas(ventas)

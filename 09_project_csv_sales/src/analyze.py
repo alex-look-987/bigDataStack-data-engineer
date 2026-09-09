@@ -12,7 +12,7 @@ def generar_resumen(ventas_limpias):
     # métricas generales
     total_facturado = sum(v['total'] for v in ventas_limpias)
     num_transacciones = len(ventas_limpias)
-    ticked_medio = total_facturado / num_transacciones
+    ticked_medio = round(total_facturado / num_transacciones, 2)
 
     # por categoría
     por_categoria = defaultdict(lambda: {"total":0, "transacciones": 0})
@@ -24,7 +24,7 @@ def generar_resumen(ventas_limpias):
     # top productos
     productos_total = defaultdict(float)
     for v in ventas_limpias:
-        productos_total[v["produto"]] += v["total"]
+        productos_total[v["producto"]] += v["total"]
 
     top_productos = sorted(productos_total.items(), key=lambda x: x[1], reverse=True)[:3]
 
