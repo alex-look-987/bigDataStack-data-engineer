@@ -1,10 +1,10 @@
 import csv
 
 # ═══ EXTRACT: leer datos ═══════════════════════════════════════
-def extract_sales(csv_route):
+def extraer_ventas(ruta_csv):
     """Lee el CSV y devuelve una lista de diccionarios (datos crudos)."""
-    with open(csv_route, "r", encoding="utf-8") as f:
+    with open(ruta_csv, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
-
+        
         return list(reader)
 
