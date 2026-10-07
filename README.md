@@ -24,7 +24,7 @@ git branch: 04/python-from-scratch
 Each lesson lives in its own branch. To explore a specific lesson, check out its branch:
 
 ```bash
-git checkout 03/logical-thinking-and-programming
+git switch 03/logical-thinking-and-programming
 ```
 
 Inside each branch you'll find a folder per lesson, with sub-lessons split into `theory` and `practice`.
@@ -35,11 +35,11 @@ Inside each branch you'll find a folder per lesson, with sub-lessons split into 
 
 | # | Lesson | Status |
 |---|--------|--------|
-| 1 | Introducción a la Ingeniería de Datos | ⬜ |
+| 1 | Introducción a la Ingeniería de Datos | ✅ |
 | 2 | Tu ordenador como herramienta | ✅ |
 | 3 | Pensamiento lógico y programación | ✅ |
-| 4 | Python desde cero | ⬜ |
-| 5 | Git en equipo y flujo profesional | ⬜ |
+| 4 | Python desde cero | ✅ |
+| 5 | Git en equipo y flujo profesional | ✅ |
 | 6 | Fundamentos de datos | ⬜ |
 | 8 | SQL - El lenguaje de los datos | ⬜ |
 | 9 | SQL analítico para negocio | ⬜ |
