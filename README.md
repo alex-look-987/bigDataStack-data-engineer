@@ -38,9 +38,10 @@ Inside each branch you'll find a folder per lesson, with sub-lessons split into 
 | 1 | Introducción a la Ingeniería de Datos | ✅ |
 | 2 | Tu ordenador como herramienta | ✅ |
 | 3 | Pensamiento lógico y programación | ✅ |
-| 4 | Python desde cero | ✅ |
+| 4 | Python desde cero | ✅ |****
 | 5 | Git en equipo y flujo profesional | ✅ |
-| 6 | Fundamentos de datos | ⬜ |
+| 6 | Fundamentos de datos | ✅ |
+| 7 | Docker y Contenedores | ⬜ |
 | 8 | SQL - El lenguaje de los datos | ⬜ |
 | 9 | SQL analítico para negocio | ⬜ |
 
@@ -48,7 +49,6 @@ Inside each branch you'll find a folder per lesson, with sub-lessons split into 
 
 | # | Lesson | Status |
 |---|--------|--------|
-| 7 | Docker y Contenedores | ⬜ |
 | 10 | Python para ingeniería de datos | ⬜ |
 | 11 | Calidad de datos y testing de pipelines | ⬜ |
 | 12 | Data Warehouse y modelado dimensional | ⬜ |
