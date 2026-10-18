@@ -1,8 +1,8 @@
 # Archivo: etl/pipeline.py
 """Mini pipeline ETL: CSV -> limpieza -> PostgreSQL"""
 
+from pathlib import Path
 from datetime import datetime
-from gzip import READ
 import csv, time, os, psycopg2
 
 def esperar_postgres(max_intentos=10):
@@ -124,7 +124,10 @@ if __name__ == '__main__':
 
     # EXTRACT
     print("\nExtrayendo datos del CSV...")
-    datos_crudos = leer_csv('/mi-pipeline-docker/data/ventas_raw.csv')
+    BASE_DIR = Path(__file__).resolve().parent.parent # raíz de mi-pipeline-docker/
+
+    ruta_datos_raw = BASE_DIR / "data" /  "ventas_raw.csv"
+    datos_crudos = leer_csv(ruta_datos_raw)
     print(f"   Filas leídas: {len(datos_crudos)}")
 
     # TRANSFORM
